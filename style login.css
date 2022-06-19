@@ -1,0 +1,140 @@
+html{
+  height: 100%;
+  background: linear-gradient(to bottom, #FEFEFE 0%, #989898 100%);
+  background-size: cover;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+nav { /*Here we set the navigation bar appearance*/
+  position: fixed; /*Means it's location is relative to the window*/
+  top: 0; /*it's set at the top of the page*/
+  left: 0; /*the same but at the left*/
+  width: 100%; /*it covers the entire window lenght, no matter the size*/
+  height: 100px; /*height of the nav bar*/
+  padding: 10px 100px;
+  box-sizing: border-box; /*sets the nav bar as a box, so we can see it*/
+  background: #191919; /*do i have to explain?*/
+}
+
+nav .logo{
+  padding: 22px 0; /*this means the padding is set 22px only for the top and bottom and 0px for left and right. Easy right?*/
+  height: 80px; /*This is kind of a fix to set it at the centre of height*/
+  float: left; /*look the "logo" text at the left side*/
+  font-size: 24px;
+  color: white; /*color of the font you noob!*/
+  line-height: 40px; /*what the hell was this for?*/
+  font-family: arial black; /*no comments*/
+}
+
+nav ul {
+  list-style: none; /*Right. Here we delete the list points, so they look just as text*/
+  float: right; /*You can see the links at the right side*/
+  display: flex; /*It modifies the link box depending on the text lenght*/
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li { /*Here we set basic things for the links*/
+  list-style: none; /*just for precaution*/
+  font-size: 18px;
+}
+
+nav ul li a { /*Here we modify the nav bar links*/
+  line-height: 90px; /*i think.. this is for the height*/
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none; /*Here we delete any extras to the text as underlines, so it's just plain text*/
+}
+
+.active { /*changes the color of the current link we are running*/
+  background-color: #A41414;
+  padding-top: 50px;
+  padding-bottom: 34px;
+}
+
+.box{
+  width: 450px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #191919;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-family: sans-serif;
+}
+
+.box h1{
+  color: white;
+}
+
+.box input[type="text"],.box input[type="password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #3498db;
+}
+
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+  background: #3498db;
+}
+
+.below {
+  margin-top: 969px;
+  clear: both;
+  background-color: #191919;
+  height: 100px;
+}
+
+.below ul {
+  padding-top: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.below ul li {
+  display: inline;
+  list-style: none;
+
+}
+
+.below ul li a {
+  padding: 13px 60px;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}

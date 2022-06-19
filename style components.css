@@ -1,0 +1,145 @@
+body{
+  margin:0;
+  padding: 0;
+  background: linear-gradient(to bottom, #FEFEFE 0%, #989898 100%);
+  font-family: monospace;
+}
+nav { /*Here we set the navigation bar appearance*/
+  position: absolute; /*Means it's location is relative to the window*/
+  top: 0; /*it's set at the top of the page*/
+  left: 0; /*the same but at the left*/
+  width: 100%; /*it covers the entire window lenght, no matter the size*/
+  height: 100px; /*height of the nav bar*/
+  padding: 10px 100px;
+  box-sizing: border-box; /*sets the nav bar as a box, so we can see it*/
+  background: #191919; /*do i have to explain?*/
+}
+
+nav .logo{
+  padding: 22px 0; /*this means the padding is set 22px only for the top and bottom and 0px for left and right. Easy right?*/
+  height: 80px; /*This is kind of a fix to set it at the centre of height*/
+  float: left; /*look the "logo" text at the left side*/
+  font-size: 24px;
+  color: white; /*color of the font you noob!*/
+  line-height: 40px; /*what the hell was this for?*/
+  font-family: arial black; /*no comments*/
+}
+
+nav ul {
+  list-style: none; /*Right. Here we delete the list points, so they look just as text*/
+  float: right; /*You can see the links at the right side*/
+  display: flex; /*It modifies the link box depending on the text lenght*/
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li { /*Here we set basic things for the links*/
+  list-style: none; /*just for precaution*/
+  font-size: 18px;
+}
+
+nav ul li a { /*Here we modify the nav bar links*/
+  line-height: 90px; /*i think.. this is for the height*/
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none; /*Here we delete any extras to the text as underlines, so it's just plain text*/
+}
+
+.active { /*changes the color of the current link we are running*/
+  background-color: #0097e6;
+  padding-top: 50px;
+  padding-bottom: 34px;
+}
+
+.content {
+  margin-top: 120px;
+  color: black;
+}
+
+.titles h1{
+  font-family: monospace;
+  margin-left: 100px;
+}
+.slider{
+  width: 1200px;
+  height: 400px;
+  background: url(1.jpg);
+  margin: 150px auto;
+  margin-top: -8.5px;
+  animation: slide 45s infinite;
+
+}
+.img{
+  width:1400px;
+  height:400px;
+  background: white;
+  margin:40px auto;
+  border-radius: 20px;
+}
+.img img{
+  float:left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.img h2{
+  padding-top: 30px;
+font-family: cursive;
+}
+.img p{
+  font-family: cursive;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.below {
+  margin-top: 200px;
+  clear: both;
+  background-color: #191919;
+  height: 100px;
+}
+
+.below ul {
+  padding-top: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.below ul li {
+  display: inline;
+  list-style: none;
+
+}
+
+.below ul li a {
+  padding: 13px 60px;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+
+@keyframes slide{
+  20%{
+    background: url(2.jpg);
+  }
+35%{
+  background: url(3.jpg);
+}
+50%{
+  background: url(4.jpg);
+}
+65%{
+  background: url(1.jpg);
+}
+80%{
+  background: url(5.jpg);
+}
+100%{
+  background: url(1.jpg);
+}
+}

@@ -1,0 +1,278 @@
+html{ /*this changes the whole page properties. It's like the baseic pillar*/
+  height: 100%;
+  background: linear-gradient(to bottom, #FEFEFE 0%, #989898 100%);
+  background-size: cover;
+  }
+
+body {/*Here we change the properties for the elements shown */
+  margin: 0; /*just sets margin.*/
+  padding: 0;/*Ok, padding sets space for all sides around an element. similar to margin*/
+  font-family: monospace;
+  /*background-color: #F2F2F2;*/
+}
+
+nav { /*Here we set the navigation bar appearance*/
+  position: fixed; /*Means it's location is relative to the window*/
+  top: 0; /*it's set at the top of the page*/
+  left: 0; /*the same but at the left*/
+  width: 100%; /*it covers the entire window lenght, no matter the size*/
+  height: 100px; /*height of the nav bar*/
+  padding: 10px 100px;
+  box-sizing: border-box; /*sets the nav bar as a box, so we can see it*/
+  background: #191919; /*do i have to explain?*/
+}
+
+nav .logo{
+  padding: 22px 0; /*this means the padding is set 22px only for the top and bottom and 0px for left and right. Easy right?*/
+  height: 80px; /*This is kind of a fix to set it at the centre of height*/
+  float: left; /*look the "logo" text at the left side*/
+  font-size: 24px;
+  color: white; /*color of the font you noob!*/
+  line-height: 40px; /*what the hell was this for?*/
+  font-family: arial black; /*no comments*/
+}
+
+nav ul {
+  list-style: none; /*Right. Here we delete the list points, so they look just as text*/
+  float: right; /*You can see the links at the right side*/
+  display: flex; /*It modifies the link box depending on the text lenght*/
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li { /*Here we set basic things for the links*/
+  list-style: none; /*just for precaution*/
+  font-size: 18px;
+}
+
+nav ul li a { /*Here we modify the nav bar links*/
+  line-height: 90px; /*i think.. this is for the height*/
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none; /*Here we delete any extras to the text as underlines, so it's just plain text*/
+}
+
+.active { /*changes the color of the current link we are running*/
+  background-color: #04B431;
+  padding-top: 50px;
+  padding-bottom: 34px;
+}
+/*I might delete this if it doesn't work properly (the .active reference)*/
+
+.content {
+  margin-top: -100px;
+  color: black;
+}
+
+.slider{/*Here we use the empty div to create a slider */
+  width: 1200px;/*Slider size*/
+  height: 400px;
+  background: url(h1.jpg);/*fist image of the slider*/
+  margin: 150px auto;/*Here we set margin to center the slider*/
+  animation: slide 30s infinite;
+}
+
+.intel {
+  background-color: #3867d6;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.intel h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.intel a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.nvidia {
+  background-color: #43A047;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.nvidia h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.nvidia a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.corsair {
+  background-color: #6F1E51;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.corsair h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.corsair a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.amd {
+  background-color: #B71C1C;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.amd h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.amd a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.razer {
+  background-color: #1e272e;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.razer h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.razer a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.EVGA {
+  background-color: #f0932b;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.EVGA h2{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  color: white;
+  font-family: consolas;
+  transform: translateY(-50%);
+}
+
+.EVGA a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 30px;
+}
+
+.content div{
+  float: left;
+  margin-left: 120px;
+}
+
+.content p {
+  margin-left: 120px;
+  font-size: 25px;
+  /*text-decoration: underline;*/
+  font-weight: bold;
+  clear: both;
+}
+
+.below {
+  margin-top: 340px;
+  clear: both;
+  background-color: #191919;
+  height: 100px;
+}
+
+.below ul {
+  padding-top: 50px;
+  list-style: none;
+  text-align: center;
+}
+
+.below ul li {
+  display: inline;
+  list-style: none;
+
+}
+
+.below ul li a {
+  padding: 13px 60px;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+@keyframes slide{/*Here we set the animation*/
+  25%{
+    background: url(h2.jpg);
+  }
+  50%{
+    background: url(h3.jpg);
+  }
+  75%{
+    background: url(h4.jpg);
+  }
+  100%{
+    background: url(h1.jpg);
+  }
+}
